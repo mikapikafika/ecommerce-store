@@ -1,22 +1,22 @@
-@keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
+/*@keyframes marquee {*/
+/*    0% {*/
+/*        transform: translateX(0);*/
+/*    }*/
+/*    100% {*/
+/*        transform: translateX(-100%);*/
+/*    }*/
+/*}*/
 
-.marquee {
-    display: block;
-    white-space: nowrap;
-    overflow: hidden;
-}
+/*.marquee {*/
+/*    display: block;*/
+/*    white-space: nowrap;*/
+/*    overflow: hidden;*/
+/*}*/
 
-.marquee p {
-    display: inline-block;
-    will-change: transform;
-    padding-left: 20%;
-    transform: translateX(0);
-    animation: marquee 0s linear infinite;
-}
+/*.marquee p {*/
+/*    display: inline-block;*/
+/*    will-change: transform;*/
+/*    padding-left: 20%;*/
+/*    transform: translateX(0);*/
+/*    animation: marquee 0s linear infinite;*/
+/*}*/
