@@ -1,9 +1,10 @@
 import React from "react";
+import Welcome from "./Welcome";
 
 function Main() {
     return (
         <main>
-            <p>ttt</p>
+            <Welcome/>
         </main>
     )
 }
