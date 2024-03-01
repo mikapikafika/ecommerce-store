@@ -1,12 +1,12 @@
 import React from "react";
 import Welcome from "./Homepage/Welcome";
-import FeaturedProducts from "./Homepage/FeaturedProducts";
+import FeaturedProductsGrid from "./Homepage/FeaturedProductsGrid";
 
 function Main() {
     return (
         <main>
             <Welcome/>
-            <FeaturedProducts/>
+            <FeaturedProductsGrid/>
         </main>
     )
 }
