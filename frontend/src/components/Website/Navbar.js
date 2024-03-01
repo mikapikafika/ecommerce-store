@@ -1,9 +1,10 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import './Navbar.css';
 
 function Navbar() {
     return (
-        <nav className="flex justify-between px-20 py-10 items-center bg-black fixed w-full top-0 font-sans">
+        <nav className="flex justify-between px-20 py-10 items-center bg-black">
             <h1 className="text-xl text-zinc-100">
                 <Link to="/">LOGO</Link>
             </h1>
@@ -19,16 +20,16 @@ function Navbar() {
                 </div>
                 <ul className="flex items-center space-x-6">
                     <li className="text-zinc-100">
-                        <Link to="/">HOME</Link>
+                        <Link to="/" className="nav-link">HOME</Link>
                     </li>
                     <li className=" text-zinc-100">
-                        <Link to="/shop">SHOP</Link>
+                        <Link to="/shop" className="nav-link">SHOP</Link>
                     </li>
                     <li className="text-zinc-100">
-                        <Link to="/contact">CONTACT</Link>
+                        <Link to="/contact" className="nav-link">CONTACT</Link>
                     </li>
                     <li className="text-zinc-100">
-                        <Link to="/cart">[CART ICON]</Link>
+                        <Link to="/cart" className="nav-link">[CART ICON]</Link>
                     </li>
                 </ul>
             </div>
