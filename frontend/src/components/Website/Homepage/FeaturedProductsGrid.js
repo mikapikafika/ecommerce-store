@@ -1,6 +1,7 @@
 import React from "react";
 import FeaturedProduct from "./FeaturedProduct";
 import {Link} from "react-router-dom";
+import './FeaturedProductsGrid.css';
 
 function FeaturedProductsGrid() {
     const products = Array.from({length: 8}, (_, index) => {
@@ -8,10 +9,10 @@ function FeaturedProductsGrid() {
     });
     return (
         <section>
-            <div className="grid grid-cols-4 w-full">
+            <div className="flex flex-row overflow-x-auto gap-16 px-20 py-20">
                 {products}
+                <Link to="/products" className="block text-center font-sans">VIEW ALL&nbsp;→</Link>
             </div>
-            <Link to="/products" className="block text-center font-sans">VIEW ALL&nbsp;→</Link>
         </section>
     )
 }
