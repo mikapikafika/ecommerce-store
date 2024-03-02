@@ -1,11 +1,11 @@
 import React from "react";
 
-function Main() {
+function Checkout() {
     return (
         <main>
-            <p>ttt</p>
+            <h1>Checkout</h1>
         </main>
     )
 }
 
-export default Main;
+export default Checkout;
