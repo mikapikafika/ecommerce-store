@@ -4,7 +4,7 @@ import FeaturedProductsGrid from "../components/Homepage/FeaturedProductsGrid";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-function Homepage() {
+function HomepagePage() {
     return (
         <main>
             <Header/>
@@ -15,4 +15,4 @@ function Homepage() {
     )
 }
 
-export default Homepage;
+export default HomepagePage;
