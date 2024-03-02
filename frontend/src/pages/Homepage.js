@@ -1,8 +1,8 @@
 import React from "react";
-import Welcome from "../components/Website/Homepage/Welcome";
-import FeaturedProductsGrid from "../components/Website/Homepage/FeaturedProductsGrid";
-import Header from "../components/Website/Header";
-import Footer from "../components/Website/Footer";
+import Welcome from "../components/Homepage/Welcome";
+import FeaturedProductsGrid from "../components/Homepage/FeaturedProductsGrid";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function Homepage() {
     return (

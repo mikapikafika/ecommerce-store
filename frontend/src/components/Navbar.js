@@ -23,10 +23,10 @@ function Navbar() {
                         <Link to="/" className="nav-link">HOME</Link>
                     </li>
                     <li className=" text-zinc-100">
-                        <Link to="/shop" className="nav-link">SHOP</Link>
+                        <Link to="/shop" className="nav-link">STORE</Link>
                     </li>
                     <li className="text-zinc-100">
-                        <Link to="/contact" className="nav-link">CONTACT</Link>
+                        <Link to="/about" className="nav-link">ABOUT</Link>
                     </li>
                     <li className="text-zinc-100">
                         <Link to="/cart" className="nav-link">[CART ICON]</Link>
