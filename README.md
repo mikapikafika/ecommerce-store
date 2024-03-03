@@ -1,6 +1,6 @@
 # E-Commerce Store
 
-This is an e-commerce store project built with React. It allows users to browse products, add them to their cart, and proceed to checkout.
+This is an e-commerce store project built with React. It allows users to browse products, add them to their cart, and proceed to checkout. Inspired by Applications in the Interpreted Languages course at TUL - refactored to make it more frontend-focused with emphasis on accessibility, responsive design and current web design trends (such as neubrutalism).        
 
 ## Features
 
