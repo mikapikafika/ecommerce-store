@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import './Header.css';
+import AnnouncementBar from "./AnnouncementBar";
 
 function Header() {
     const textItems = [
@@ -12,9 +13,10 @@ function Header() {
 
     return (
         <header className="font-sans">
-            <div className="px-20 py-3 bg-black marquee">
-                <span>{textList}</span>
-            </div>
+            <AnnouncementBar/>
+            {/*<div className="px-20 py-3 bg-black marquee">*/}
+            {/*    <span>{textList}</span>*/}
+            {/*</div>*/}
             <Navbar/>
         </header>
     )
