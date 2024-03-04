@@ -2,9 +2,9 @@ import React from "react";
 
 function Checkout() {
     return (
-        <main>
+        <div>
             <h1>Checkout</h1>
-        </main>
+        </div>
     )
 }
 
