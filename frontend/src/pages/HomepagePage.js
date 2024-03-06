@@ -1,6 +1,6 @@
 import React from "react";
-import Welcome from "../components/Homepage/Welcome";
-import FeaturedProductsGrid from "../components/Homepage/FeaturedProductsGrid";
+import HomepageBanner from "../components/Homepage/HomepageBanner";
+import ProductsCarousel from "../components/Homepage/ProductsCarousel";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -8,8 +8,8 @@ function HomepagePage() {
     return (
         <main>
             <Header/>
-            <Welcome/>
-            <FeaturedProductsGrid/>
+            <HomepageBanner/>
+            <ProductsCarousel/>
             <Footer/>
         </main>
     )
