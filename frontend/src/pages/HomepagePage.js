@@ -1,16 +1,12 @@
 import React from "react";
-import Welcome from "../components/Homepage/Welcome";
-import FeaturedProductsGrid from "../components/Homepage/FeaturedProductsGrid";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import HomepageBanner from "../components/Homepage/HomepageBanner";
+import ProductsDisplay from "../components/ProductsDisplay";
 
 function HomepagePage() {
     return (
         <main>
-            <Header/>
-            <Welcome/>
-            <FeaturedProductsGrid/>
-            <Footer/>
+            <HomepageBanner/>
+            <ProductsDisplay isCarousel={true} productCount={8}/>
         </main>
     )
 }

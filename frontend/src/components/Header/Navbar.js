@@ -29,7 +29,7 @@ function Navbar() {
                         <Link to="/about" className="nav-link">ABOUT</Link>
                     </li>
                     <li className="text-zinc-100">
-                        <Link to="/cart" className="nav-link">[CART ICON]</Link>
+                        <Link to="/checkout" className="nav-link">[CART ICON]</Link>
                     </li>
                 </ul>
             </div>
