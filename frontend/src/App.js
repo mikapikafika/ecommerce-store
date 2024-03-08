@@ -1,18 +1,26 @@
 import './App.css';
 import {Route, Routes} from "react-router-dom";
-import Homepage from "./pages/Homepage";
-import Shop from "./pages/Shop";
+import HomepagePage from "./pages/HomepagePage";
+import StorePage from "./pages/StorePage";
 import AboutPage from "./pages/AboutPage";
-import Checkout from "./pages/Checkout";
+import CheckoutPage from "./pages/CheckoutPage";
+import ProductPage from "./pages/ProductPage";
+import Header from "./components/WebsiteSkeleton/Header";
+import Footer from "./components/WebsiteSkeleton/Footer";
 
 function App() {
     return (
-        <Routes>
-            <Route path="/" element={<Homepage/>}/>
-            <Route path="/shop" element={<Shop/>}/>
-            <Route path="/about" element={<AboutPage/>}/>
-            <Route path="/checkout" element={<Checkout/>}/>
-        </Routes>
+        <div className="flex flex-col min-h-screen">
+            <Header/>
+            <Routes className="flex-grow">
+                <Route path="/" element={<HomepagePage/>}/>
+                <Route path="/store" element={<StorePage/>}/>
+                <Route path="/product" element={<ProductPage/>}/>
+                <Route path="/about" element={<AboutPage/>}/>
+                <Route path="/checkout" element={<CheckoutPage/>}/>
+            </Routes>
+            <Footer/>
+        </div>
     );
 }
 

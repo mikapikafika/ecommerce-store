@@ -1,11 +1,10 @@
 import React from "react";
 
-function Checkout() {
+function CheckoutPage() {
     return (
         <main>
-            <h1>Checkout</h1>
         </main>
     )
 }
 
-export default Checkout;
+export default CheckoutPage;

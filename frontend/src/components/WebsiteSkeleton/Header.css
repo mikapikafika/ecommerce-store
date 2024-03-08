@@ -1,9 +1,9 @@
 /*@keyframes marquee {*/
 /*    0% {*/
-/*        transform: translateX(0);*/
+/*        transform: translateX(-100%);*/
 /*    }*/
 /*    100% {*/
-/*        transform: translateX(-100%);*/
+/*        transform: translateX(100%);*/
 /*    }*/
 /*}*/
 
@@ -11,12 +11,12 @@
 /*    display: block;*/
 /*    white-space: nowrap;*/
 /*    overflow: hidden;*/
+/*    animation: marquee 10s linear infinite;*/
 /*}*/
 
 /*.marquee p {*/
 /*    display: inline-block;*/
 /*    will-change: transform;*/
 /*    padding-left: 20%;*/
-/*    transform: translateX(0);*/
-/*    animation: marquee 0s linear infinite;*/
+/*    animation: marquee 10s linear infinite;*/
 /*}*/
