@@ -1,16 +1,12 @@
 import React from "react";
 import HomepageBanner from "../components/Homepage/HomepageBanner";
-import ProductsCarousel from "../components/Homepage/ProductsCarousel";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import ProductsDisplay from "../components/ProductsDisplay";
 
 function HomepagePage() {
     return (
         <main>
-            <Header/>
             <HomepageBanner/>
-            <ProductsCarousel/>
-            <Footer/>
+            <ProductsDisplay isCarousel={true} productCount={8}/>
         </main>
     )
 }

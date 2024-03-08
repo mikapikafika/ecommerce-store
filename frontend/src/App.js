@@ -5,16 +5,22 @@ import StorePage from "./pages/StorePage";
 import AboutPage from "./pages/AboutPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import ProductPage from "./pages/ProductPage";
+import Header from "./components/WebsiteSkeleton/Header";
+import Footer from "./components/WebsiteSkeleton/Footer";
 
 function App() {
     return (
-        <Routes>
-            <Route path="/" element={<HomepagePage/>}/>
-            <Route path="/store" element={<StorePage/>}/>
-            <Route path="/product" element={<ProductPage/>}/>
-            <Route path="/about" element={<AboutPage/>}/>
-            <Route path="/checkout" element={<CheckoutPage/>}/>
-        </Routes>
+        <div className="flex flex-col min-h-screen">
+            <Header/>
+            <Routes className="flex-grow">
+                <Route path="/" element={<HomepagePage/>}/>
+                <Route path="/store" element={<StorePage/>}/>
+                <Route path="/product" element={<ProductPage/>}/>
+                <Route path="/about" element={<AboutPage/>}/>
+                <Route path="/checkout" element={<CheckoutPage/>}/>
+            </Routes>
+            <Footer/>
+        </div>
     );
 }
 

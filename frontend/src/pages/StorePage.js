@@ -1,16 +1,12 @@
 import React from 'react';
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import ProductBanner from "../components/Store/ProductBanner";
-import ProductsGrid from "../components/Store/ProductsGrid";
+import ProductsDisplay from "../components/ProductsDisplay";
 
 function StorePage() {
     return (
         <main>
-            <Header/>
             <ProductBanner/>
-            <ProductsGrid/>
-            <Footer/>
+            <ProductsDisplay isCarousel={false} productCount={12}/>
         </main>
     )
 }
