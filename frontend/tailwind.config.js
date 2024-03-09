@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         'sans': ['Nimbus Sans D OT L', 'Helvetica', 'sans-serif']
       },
+      height: {
+        '128': '32rem',
+      },
     },
   },
   plugins: [],
