@@ -10,7 +10,7 @@ import Footer from "./components/WebsiteSkeleton/Footer";
 
 function App() {
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col justify-between min-h-screen">
             <Header/>
             <Routes className="flex-grow">
                 <Route path="/" element={<HomepagePage/>}/>
