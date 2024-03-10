@@ -1,6 +1,5 @@
 import React, {useState, useEffect, useRef} from "react";
 import Navbar from "../Header/Navbar";
-import './Header.css';
 import AnnouncementBar from "../Header/AnnouncementBar";
 
 function Header() {

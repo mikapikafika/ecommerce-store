@@ -1,6 +1,6 @@
 import React from "react";
 
-function ProductBanner() {
+function StoreBanner() {
     return (
         <div className="flex flex-col items-center justify-center h-96 bg-white font-sans">
             <div className="uppercase w-2/4">
@@ -10,4 +10,4 @@ function ProductBanner() {
     )
 }
 
-export default ProductBanner;
+export default StoreBanner;

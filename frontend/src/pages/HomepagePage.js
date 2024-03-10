@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import HomepageBanner from "../components/Homepage/HomepageBanner";
 import ProductsDisplay from "../components/ProductsDisplay";
+import HomepageSection from "../components/Homepage/HomepageSection";
 
 function HomepagePage() {
     const [showPopUp, setShowPopUp] = useState(false);
@@ -19,6 +20,8 @@ function HomepagePage() {
             <HomepageBanner/>
             <ProductsDisplay isCarousel={true} productCount={8}/>
             {showPopUp && <PopUp closePopUp={() => setShowPopUp(false)}/>}
+            <HomepageSection header="SPECIAL OFFER" text="some special offer text"/>
+            <HomepageSection header="SOME OTHER SECTION IDK" text="text text text"/>
         </main>
     )
 }
@@ -26,7 +29,7 @@ function HomepagePage() {
 function PopUp({closePopUp}) {
     return (
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
-            <div className="bg-white p-4 rounded-lg">
+            <div className="bg-white p-4 flex flex-row w-3/5">
                 <h2 className="text-2xl font-bold">Welcome to our store</h2>
                 <p>Get 10% off your first order when you sign up for our newsletter</p>
                 <form>
