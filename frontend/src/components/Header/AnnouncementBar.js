@@ -1,19 +1,13 @@
 import React from "react";
-import './AnnouncementBar.css';
+import Marquee from "react-fast-marquee";
 
 function AnnouncementBar() {
-    const tableData = [
-        'FREE SHIPPING ON BUNDLES & ORDERS OVER $50',
-        'FREE SHIPPING ON BUNDLES & ORDERS OVER $50',
-        'FREE SHIPPING ON BUNDLES & ORDERS OVER $50',
-    ]
-    const spanList = tableData.map((text, index) => <span className={`text-center text-zinc-100 marquee-item-${index}`}>{text}</span>);
-
     return (
-        <section id="announcement-bar" className="marquee">
-            <div className="bg-black text-zinc-100">
-                {spanList}
-            </div>
+        <section id="announcement-bar">
+            <Marquee className="bg-black py-3 font-sans text-zinc-100 text-xl uppercase" autoFill={true} pauseOnHover={true} speed={60}>
+                <p className="ml-8">Free shipping on orders over $50</p>
+                <p className="ml-8">New arrivals every week</p>
+            </Marquee>
         </section>
     )
 }

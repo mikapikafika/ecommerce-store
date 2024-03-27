@@ -1,11 +1,13 @@
 import React from 'react';
-import ProductBanner from "../components/Store/ProductBanner";
+import StoreBanner from "../components/Store/StoreBanner";
 import ProductsDisplay from "../components/ProductsDisplay";
+import FilterProducts from "../components/Store/FilterProducts";
 
 function StorePage() {
     return (
         <main>
-            <ProductBanner/>
+            <StoreBanner/>
+            <FilterProducts/>
             <ProductsDisplay isCarousel={false} productCount={12}/>
         </main>
     )
