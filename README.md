@@ -1,4 +1,4 @@
-<h1 align="center" id="title">E-Commerce Store</h1>
+<h1 align="center" id="title">Gnomenciaga</h1>
 
 <p id="description">This is an e-commerce store selling gnomes built with React and Tailwind CSS. Inspired by Applications in the Interpreted Languages course at TUL - refactored to make it more frontend-focused with emphasis on accessibility responsive design and current web design trends (such as neubrutalism). My own personal project to keep learning aside from studies.
 
