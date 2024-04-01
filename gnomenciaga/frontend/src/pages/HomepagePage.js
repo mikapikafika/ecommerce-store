@@ -2,14 +2,11 @@ import React, {useState, useEffect} from "react";
 import HomepageBanner from "../components/Homepage/HomepageBanner";
 import ProductsDisplay from "../components/ProductsDisplay";
 import HomepageSection from "../components/Homepage/HomepageSection";
-// import { getProducts } from "../../../backend/getProducts";
+import { getProducts } from "../backend/getProducts";
 
 function HomepagePage() {
     const [showPopUp, setShowPopUp] = useState(false);
     const [products, setProducts] = useState([]);
-    const getProducts = async () => {
-        return null;
-    }
 
     useEffect(() => {
         if (!localStorage.getItem('popUpShown')) {
@@ -28,7 +25,7 @@ function HomepagePage() {
     return (
         <main>
             <HomepageBanner/>
-            <ProductsDisplay isCarousel={true} productCount={8} products={products}/>
+            <ProductsDisplay isCarousel={true} products={products.slice(0,6)}/>
             {showPopUp && <PopUp closePopUp={() => setShowPopUp(false)}/>}
             <HomepageSection header="Limited time offer: Gnomenciaga exclusive" text="Unleash the magic with our special promotion - buy any two gnomes and get the third one for FREE! Hurry, this offer won't last long."/>
             <HomepageSection header="Welcome to Gnomenciaga" text="Where Gnome Magic Meets High Fashion! Explore our curated collection of enchanting garden guardians, each a masterpiece of style and mystery. Elevate your outdoor space with our iconic gnomes and unleash the magic in every corner of your garden. Shop now and step into a world of whimsy with Gnomenciaga!"/>

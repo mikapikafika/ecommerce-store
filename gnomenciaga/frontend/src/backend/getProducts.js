@@ -1,6 +1,6 @@
-import {app, collection, getDocs, getFirestore} from './firebase'
+import {collection, getDocs} from 'firebase/firestore';
+import {db} from '../firebase'; // assuming firebase.js is in the same directory
 
-const db = getFirestore(app);
 export async function getProducts() {
     const productsCollection = collection(db, 'products');
     const productsSnapshot = await getDocs(productsCollection);
