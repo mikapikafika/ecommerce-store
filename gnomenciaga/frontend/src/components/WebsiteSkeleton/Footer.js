@@ -6,9 +6,9 @@ function Footer() {
             <div className="mx-auto max-w-screen-xl text-center font-sans">
                 <a href="#"
                    className="flex justify-center items-center text-2xl font-semibold text-zinc-100">
-                    LOGO
+                    GNOMENCIAGA
                 </a>
-                <p className="my-6 text-zinc-400">description</p>
+                <p className="my-6 text-zinc-400">Unraveling the charm of gnomes since 2024</p>
                 <ul className="flex flex-wrap justify-around items-center mb-6 text-zinc-100 uppercase">
                     <li>
                         <a href="#" className="mr-4 hover:underline md:mr-6 ">About</a>

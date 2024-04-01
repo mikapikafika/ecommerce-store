@@ -7,7 +7,7 @@ function Navbar({className}) {
         <nav
             className={`flex justify-between px-20 py-10 items-center bg-black z-50 ${className}`}>
             <h1 className="text-xl text-zinc-100">
-                <Link to="/">LOGO</Link>
+                <Link to="/">GNOMENCIAGA</Link>
             </h1>
             <div className="flex items-center">
                 <div className="flex items-center">
