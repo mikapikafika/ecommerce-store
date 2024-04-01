@@ -4,7 +4,7 @@
 
 [PROJECT IN PROGRESS]
 </p>    
-<img src="./frontend/img/store.png" alt="Store" width="100%">
+<img src="./gnomenciaga/frontend/img/store.png" alt="Store" width="100%">
 
 <h2>🧐 Features</h2>
 
